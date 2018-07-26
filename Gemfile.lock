@@ -37,6 +37,8 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.4)
+    autoprefixer-rails (6.7.7.1)
+      execjs
     binding_of_caller (0.8.0)
       debug_inspector (>= 0.0.1)
     builder (3.2.3)
@@ -54,6 +56,9 @@ GEM
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.25)
+    foundation-rails (5.4.5.0)
+      railties (>= 3.1.0)
+      sass (>= 3.2.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (0.9.5)
@@ -153,8 +158,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails
   byebug
   coffee-rails (~> 4.1.0)
+  foundation-rails
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2.6)
