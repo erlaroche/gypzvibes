@@ -4,7 +4,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 #add postgresql for heroku deployment
-gem 'pg'
+group :production do
+	gem 'pg'
+end
 # Add rails12factor gem for production - configures logging to work correctly, and allows app to serve static apps directly
 gem 'rails_12factor', group: :production
 
