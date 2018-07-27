@@ -11,17 +11,17 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+
 #require devise
 gem 'devise'
 
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3', group: :development # Added development group.
 #add postgresql for heroku deployment
-  group :development, :test do
-  gem 'sqlite3'
-end
+gem 'pg', group: :production # Added postgres and made it production only.
 
-group :production do
-  gem 'pg'
-end
+#add reails_12factor for heroku deployment
+gem 'rails_12factor'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
