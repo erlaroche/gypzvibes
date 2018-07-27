@@ -11,6 +11,9 @@ gem 'rails_12factor', group: :production
 #previous version of devise for production
 gem 'devise', '3.0.3'
 
+# enables rails 4 to deliver assets instead of returing a 404 when deployed to heroku
+gem 'rails_serve_static_assets'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
