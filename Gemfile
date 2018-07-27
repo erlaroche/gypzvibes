@@ -13,6 +13,10 @@ group :production do
 end
 # Add rails12factor gem for production - configures logging to work correctly, and allows app to serve static apps directly
 gem 'rails_12factor', group: :production
+
+#previous version of devise for production
+gem 'devise', '3.0.3'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
