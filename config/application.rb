@@ -22,5 +22,9 @@ module Gypzvibes
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    
+    # this is a legacy app (rails 4) app is attempting to connect to the database as part of rake assets:precompile. 
+    # Because the config vars are not present in the environment, we use a placeholder DATABASE_URL to satisfy Rails.
+    config.assets.initialize_on_precompile = false
   end
 end
