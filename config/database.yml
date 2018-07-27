@@ -3,7 +3,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: gypzvibes-development
+  database: Gypzvibes-development
   pool: 5
   port: 5432
   host: localhost
@@ -11,7 +11,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: gypzvibes-test
+  database: Gypzvibes-test
   pool: 5
   port: 5432
   host: localhost
