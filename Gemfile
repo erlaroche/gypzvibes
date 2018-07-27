@@ -11,6 +11,8 @@ end
 group :production do
   gem 'pg'
 end
+# Add rails12factor gem for production - configures logging to work correctly, and allows app to serve static apps directly
+gem 'rails_12factor', group: :production
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
