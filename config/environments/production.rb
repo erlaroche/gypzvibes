@@ -27,7 +27,11 @@ Rails.application.configure do
   # By default Rails 4 will return a 404 if an asset is not handled via an external proxy such as Nginx. 
   #While this default behavior will help you debug your Nginx configuration, it makes a default Rails app with assets unusable on Heroku. 
   #To fix this we’ve released a gem rails_serve_static_assets.
-  config.serve_static_assets = true
+  config.serve_static_files = true
+
+    # this is a legacy app (rails 4) app is attempting to connect to the database as part of rake assets:precompile. 
+    # Because the config vars are not present in the environment, we use a placeholder DATABASE_URL to satisfy Rails.
+    config.assets.initialize_on_precompile = false
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
