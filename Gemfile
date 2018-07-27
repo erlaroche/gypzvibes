@@ -7,6 +7,7 @@ gem 'rails', '4.2.6'
 	gem 'pg'
 
 gem 'puma'
+gem 'rails_12factor'
 
 #previous version of devise for production
 gem 'devise', '3.0.3'
