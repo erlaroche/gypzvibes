@@ -18,14 +18,44 @@
 @import "foundation_and_overrides";
 /* Add imports of custom sass/scss files here */
 
-
-nav.top-bar, li.active {
+/* style for foundation zurb top-bar */
+.menu a {
+  color: #red;
+}
+nav.top-bar {
 	overflow: hidden;
 	height: 45px;
 	line-height: 45px;
 	position: relative;
-	background-color: #85c690 !important;
+	background: #51935c;
 	margin-bottom: 0; 
+}
+.top-bar-section ul li.active > a { 
+	background: #51935c !important;
 	color: white !important;
+}
+
+/* style for testimonial images */
+.testimonial_img {
+	border: 2px solid black;
+	height: 200px;
+	border-radius: 150px;
+	margin-top: -75px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    margin: 25px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.row {
+	padding: 10px;
+	margin-top: 10px;
+	margin-left: -20px;
 }
 
