@@ -19,6 +19,9 @@
 /* Add imports of custom sass/scss files here */
 
 /* style for foundation zurb top-bar */
+.menu a {
+  color: #red;
+}
 nav.top-bar {
 	overflow: hidden;
 	height: 45px;
@@ -54,9 +57,5 @@ nav.top-bar {
 	padding: 10px;
 	margin-top: 10px;
 	margin-left: -20px;
-}
-
-a {
-	color: blue;
 }
 
