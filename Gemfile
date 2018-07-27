@@ -5,8 +5,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.6'
 #add postgresql for heroku deployment
 	gem 'pg'
-# Add rails12factor gem for production - configures logging to work correctly, and allows app to serve static apps directly
-gem 'rails_12factor', group: :production
+
+gem 'puma'
 
 #previous version of devise for production
 gem 'devise', '3.0.3'
