@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Gypzvibes" %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
@@ -15,5 +15,10 @@
 
     <%= yield %>
     <%= javascript_include_tag "application" %>
+    <div class="row">
+      <div class="large-12 columns">
+        <%= render "layouts/header" %>
+      </div>
+    </div>
   </body>
 </html>

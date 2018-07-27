@@ -17,3 +17,15 @@
 
 @import "foundation_and_overrides";
 /* Add imports of custom sass/scss files here */
+
+
+nav.top-bar, li.active {
+	overflow: hidden;
+	height: 45px;
+	line-height: 45px;
+	position: relative;
+	background-color: #85c690 !important;
+	margin-bottom: 0; 
+	color: white !important;
+}
+
