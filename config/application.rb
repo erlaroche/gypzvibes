@@ -24,6 +24,6 @@ module Gypzvibes
     config.active_record.raise_in_transactional_callbacks = true
 
     #By default Rails 4 will not serve your assets. To enable this functionality
-    config.serve_static_assets = true
+    config.serve_static_files = true
   end
 end
