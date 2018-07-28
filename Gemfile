@@ -14,6 +14,8 @@ gem 'coffee-rails', '~> 4.1.0'
 #require devise
 gem 'devise'
 
+gem 'minitest'
+
 #add rails_12factor for heroku deployment
 gem 'rails_12factor'
 
