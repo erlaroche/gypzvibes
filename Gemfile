@@ -18,19 +18,19 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 
 #require devise
-gem 'devise'
+gem 'devise', group: :production
 
 # Use Puma as the app server
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 3.7', group: :production
 
-gem 'minitest'
-gem "iconv", "~> 1.0.3"
+gem 'minitest', group: :production
+gem "iconv", "~> 1.0.3", group: :production
 
 #add rails_12factor for heroku deployment
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 
 #add postgresql for heroku deployment
-gem 'pg', '~> 0.18.4'
+gem 'pg', '~> 0.18.4', group: :production
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
