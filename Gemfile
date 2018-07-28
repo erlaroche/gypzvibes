@@ -11,6 +11,7 @@ gem 'rails', '4.2.6'
 
 #require devise
 gem 'devise', group: :production
+gem 'omniauth', group: :production
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
