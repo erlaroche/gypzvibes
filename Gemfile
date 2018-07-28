@@ -20,6 +20,9 @@ gem 'coffee-rails', '~> 4.1.0'
 #require devise
 gem 'devise'
 
+# Use Puma as the app server
+gem 'puma', '~> 3.7'
+
 gem 'minitest'
 gem "iconv", "~> 1.0.3"
 
