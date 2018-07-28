@@ -1,6 +1,8 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+#to enable better sprokets
+config.assets.raise_production_errors = true
   # Code is not reloaded between requests.
   config.cache_classes = true
 
