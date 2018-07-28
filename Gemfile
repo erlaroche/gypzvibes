@@ -18,7 +18,7 @@ gem 'devise'
 gem 'rails_12factor'
 
 #add postgresql for heroku deployment
-gem 'pg', '~> 0.11'
+gem 'pg', '~> 0.18.4'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
