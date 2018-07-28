@@ -27,6 +27,8 @@ gem 'sprockets_better_errors'
 # Use Puma as the app server
 gem 'puma', '~> 3.7', group: :production
 
+gem 'rack-timeout', group: :production
+
 gem 'minitest', group: :production
 gem "iconv", "~> 1.0.3", group: :production
 
