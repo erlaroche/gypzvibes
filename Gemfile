@@ -36,7 +36,10 @@ gem "iconv", "~> 1.0.3", group: :production
 gem 'rails_12factor', group: :production
 
 #add postgresql for heroku deployment
-gem 'pg', '~> 0.18.4', group: :production
+# Make sure we're using pg high enough for type casts and Ruby 2.2+ compatibility
+gem "pg", ">= 0.18", "< 2.0", group: :production
+
+gem 'sqlite3', group: :test
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
