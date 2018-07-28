@@ -15,6 +15,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'devise'
 
 gem 'minitest'
+gem "iconv", "~> 1.0.3"
 
 #add rails_12factor for heroku deployment
 gem 'rails_12factor'
