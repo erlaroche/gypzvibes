@@ -9,6 +9,10 @@ ruby "~> 2.3.1"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 
+#add postgresql for heroku deployment
+# Make sure we're using pg high enough for type casts and Ruby 2.2+ compatibility
+gem 'pg', '~> 0.20', group: :production
+
 #require devise
 gem 'devise', group: :production
 gem 'omniauth', group: :production
@@ -35,10 +39,6 @@ gem "iconv", "~> 1.0.3", group: :production
 
 #add rails_12factor for heroku deployment
 gem 'rails_12factor', group: :production
-
-#add postgresql for heroku deployment
-# Make sure we're using pg high enough for type casts and Ruby 2.2+ compatibility
-gem "pg", ">= 0.18", "< 2.0", group: :production
 
 gem 'sqlite3', group: :test
 
